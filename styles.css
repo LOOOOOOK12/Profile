@@ -20,7 +20,6 @@
     border-radius: 50%;
     cursor: pointer;
 }
-
 .BTN_up{
     height: 50px;
     border-radius: 50%;
@@ -53,7 +52,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 30px 5%;
 }
 
 .nav_links{
@@ -62,7 +61,7 @@ header{
 
 .nav_links li{
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 30px;
 }
 
 .nav_links li a{
@@ -83,7 +82,7 @@ header{
 }
 
 .BTN_up:hover{
-    height: 55px;
+    height: 60px;
     transition: all 0.5s ease 0s;
 
 }
