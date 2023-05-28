@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0 ;
+    outline: none; 
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    background-color: #466DFF;
+}
+
+/*Buttons*/
+.LOGO{
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid #ffc0cb ;
+}
+
+.BTN_up{
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid #ffc0cb ;
+}
+
+/*Buttons*/
+
+li,a{
+    text-decoration:none;
+    font-size: 20px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.5s ease 0s;
+}
+
+
+
+/*Animations*/
+.nav_links li a:hover{
+    color: yellow;
+    
+}
+
+.LOGO:hover{
+    height: 70px;
+    transition: all 0.5s ease 0s;
+}
+.BTN_up:hover{
+    height: 70px;
+    transition: all 0.5s ease 0s;
+
+}
+
+
