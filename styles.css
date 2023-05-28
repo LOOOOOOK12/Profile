@@ -11,10 +11,14 @@
 
 /*Buttons*/
 .LOGO{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile{
     height: 60px;
     border-radius: 50%;
     cursor: pointer;
-    border: 3px solid #ffc0cb ;
 }
 
 .BTN_up{
@@ -22,9 +26,23 @@
     border-radius: 50%;
     cursor: pointer;
     border: 3px solid #ffc0cb ;
+    position: fixed;
+    background-color: transparent;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.2s ease-in-out;
+}
+/*Buttons*/
+
+h1{
+    padding: 10px;
 }
 
-/*Buttons*/
+span{
+    color: yellow;
+}
 
 li,a{
     text-decoration:none;
@@ -59,12 +77,13 @@ header{
     
 }
 
-.LOGO:hover{
+.profile:hover{
     height: 70px;
     transition: all 0.5s ease 0s;
 }
+
 .BTN_up:hover{
-    height: 70px;
+    height: 55px;
     transition: all 0.5s ease 0s;
 
 }
