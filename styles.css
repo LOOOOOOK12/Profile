@@ -2,24 +2,45 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    border: 0 ;
-    outline: none; 
     font-family: 'Oswald', sans-serif;
     color: white;
     background-color: #466DFF;
 }
 
-/*Buttons*/
 .LOGO{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.profile{
     height: 60px;
     border-radius: 50%;
-    cursor: pointer;
+    
 }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    
+}
+
+li,a{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav{
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav li a {
+    transition: all 0.5s ease 0s;
+}
+
+
+/*Buttons*/
 .BTN_up{
     height: 50px;
     border-radius: 50%;
@@ -33,50 +54,13 @@
     margin: 10px;
     transition: all 0.2s ease-in-out;
 }
-/*Buttons*/
-
-h1{
-    padding: 10px;
-}
-
-span{
-    color: yellow;
-}
-
-li,a{
-    text-decoration:none;
-    font-size: 20px;
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 5%;
-}
-
-.nav_links{
-    list-style: none;
-}
-
-.nav_links li{
-    display: inline-block;
-    padding: 0px 30px;
-}
-
-.nav_links li a{
-    transition: all 0.5s ease 0s;
-}
-
-
 
 /*Animations*/
-.nav_links li a:hover{
+nav li a:hover{
     color: yellow;
-    
 }
 
-.profile:hover{
+.LOGO:hover{
     height: 70px;
     transition: all 0.5s ease 0s;
 }
@@ -84,7 +68,13 @@ header{
 .BTN_up:hover{
     height: 60px;
     transition: all 0.5s ease 0s;
+}
 
+/*Responsive*/
+@media (max-width: 992px){
+    nav li a{
+        display: none;
+    }
 }
 
 
