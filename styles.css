@@ -3,21 +3,31 @@
     padding: 0;
     margin: 0;
     font-family: 'Oswald', sans-serif;
-    color: white;
-    background-color: #466DFF;
+}
+
+body{
+    background-color: #ffc0cb;
+    padding-top: 80px;
 }
 
 /*nav bar(Start)*/
-header{
-    background: transparent;
-    z-index: 5;
+nav{
+    height: 80px;
+    position: fixed;
+    /* background:#466DFF; */
+    top: 0;
+    z-index: 1;
     width: 100%;
-    height: 100px;
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;  
+    padding: 30px 10%;
+}
+
+h1{
+    font-size: 30px;
+    color: white;
 }
 
 span{
@@ -26,39 +36,43 @@ span{
 }
 
 li,a{
+    color: #466DFF;
+    font-weight:600;
     font-size: 20px;
     text-decoration: none;
 }
 
-nav{
+ul li{
     list-style: none;
-}
-
-nav li{
     display: inline-block;
     padding: 0px 20px;
 }
 
-.nav li a {
+nav li a {
     transition: all 0.5s ease 0s;
 }
-/*nav bar (end)*/
 
 
+/*Hero*/
 
-/*About (Start)*/
-.Logo{
-    margin-top: 100px;
-    margin: 50px;
+.Hero-Container{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#Profile{
     height: 500px;
     border-radius: 50%;
 }
-/*About (end)*/
+
+/*About*/
+.About-container{
+    padding: 7rem 0;
+
+}
+
 
 /*Projects*/
-
-
-
 
 /*Buttons (Start)*/
 .BTN_up{
@@ -80,26 +94,24 @@ nav li a:hover{
     color: yellow;
 }
 
-.LOGO:hover{
-    height: 70px;
-    transition: all 0.5s ease 0s;
-}
-
 .BTN_up:hover{
     height: 60px;
     transition: all 0.5s ease 0s;
 }
 
-h1:hover{
-    font-size: 40px;
-    transition: all 0.5s ease 0s;
+nav ul li a::after{
+
+
 }
+
 
 /*Responsive*/
 @media (max-width: 992px){
     nav li a{
         display: none;
     }
+
+
 }
 
 
