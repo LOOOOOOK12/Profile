@@ -56,8 +56,21 @@ nav li a {
 /*Hero*/
 
 .Hero-Container{
+    padding: 3rem;
     padding-left: 100px;
-    padding-right: 100px;
+    /* padding-right: 100px;  */
+}
+
+.Hero{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2{
+    padding-left: 50px;
+    color: white;
+    font-size: 90px;
 }
 
 #Profile{
@@ -67,7 +80,7 @@ nav li a {
 
 /*About*/
 .About-container{
-    padding: 10rem 0;
+    padding: 7rem 0; 
 }
 
 
@@ -78,7 +91,7 @@ nav li a {
     height: 50px;
     border-radius: 50%;
     cursor: pointer;
-    border: 3px solid #ffc0cb ;
+    border: 3px solid #466DFF ;
     position: fixed;
     background-color: transparent;
     bottom: 0;
@@ -98,16 +111,17 @@ nav li a:hover{
     transition: all 0.5s ease 0s;
 }
 
-nav ul li a::after{
-
-
-}
-
-
 /*Responsive*/
 @media (max-width: 992px){
     nav li a{
         display: none;
+    }
+
+    #Profile{
+        height: 400px;
+    }
+    h2{
+      font-size: 30px;  
     }
 
 
