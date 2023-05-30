@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #ffc0cb;
+    background-color: #ff7f94;
     padding-top: 80px;
 }
 
@@ -41,6 +41,7 @@ li,a{
     font-size: 20px;
     text-decoration: none;
 }
+
 
 ul li{
     list-style: none;
@@ -78,6 +79,14 @@ h2{
     border-radius: 50%;
 }
 
+.luke,.symon,.alamil{
+    color: white;
+    transition: all 0.5s ease 0s;
+}
+
+
+
+
 /*About*/
 .About-container{
     padding: 7rem 0; 
@@ -111,12 +120,28 @@ nav li a:hover{
     transition: all 0.5s ease 0s;
 }
 
+.luke:hover{
+    color: #466DFF;
+    transition: all 0.5s ease 0s;
+}
+
+.symon:hover{
+    color: rgb(253, 49, 49);
+    transition: all 0.5s ease 0s;
+}
+
+.alamil:hover{
+    color: rgb(255, 255, 0);
+    transition: all 0.5s ease 0s;
+}
 /*Responsive*/
 @media (max-width: 992px){
     nav li a{
         display: none;
     }
-
+    .Hero-Container{
+        width: 100%;
+    }
     #Profile{
         height: 400px;
     }
