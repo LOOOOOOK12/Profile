@@ -74,6 +74,12 @@ nav li a {
 
 /*Hero*/
 
+.First-container,.Second-container,.Third-container,.Fourth-container{
+    width:90%;
+    max-width: 1300px;
+
+}
+
 .Hero-Container{
     position: relative;
     width: 100%;
@@ -109,7 +115,7 @@ h2{
 
 
 /*About*/
-.About-container{
+.Second-container{
     padding: 7rem 0; 
 }
 
