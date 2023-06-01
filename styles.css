@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #ff607b;
+    background-color: #ff8499;
     padding-top: 80px;
 }
 
@@ -16,7 +16,7 @@ body{
     padding: 0 .1rem;
   }
   ::-webkit-scrollbar-track{
-    background-color: #af2b41;
+    background-color: #ff7189;
   }
   ::-webkit-scrollbar-thumb{
     background-color: #596eb9;
@@ -29,19 +29,25 @@ body{
   
 
 /*nav bar(Start)*/
-nav{
-    height: 80px;
+#nav-bar{
+    height: 50px;
     position: fixed;
-    /* background:#466DFF; */
     top: 0;
-    z-index: 1;
+    z-index: 15;
     width: 100%;
     position: fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
-    padding: 1.8rem 7%;
+    padding: 2.8rem 6%; 
+    transition: all 0.3s ease;
 }
+
+.active-nav{
+    
+    background-color:#ff6a83;
+    box-shadow: 1px 1px 5px #ff5d78;
+  }
 
 h1{
     font-size: 40px;
@@ -64,7 +70,7 @@ li,a{
 ul li{
     list-style: none;
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 30px;
 }
 
 nav li a {
@@ -74,17 +80,18 @@ nav li a {
 
 /*Hero*/
 
-.First-container,.Second-container,.Third-container,.Fourth-container{
-    width:90%;
+.Hero,.About,.Contacts,.LOL-container{
+    width:100%;
     max-width: 1300px;
 
 }
 
 .Hero-Container{
-    position: relative;
-    width: 100%;
-    padding: 7vh;
+    /* position: relative; */
+    /* width: 100%; */
+    padding: 4.7rem 7vh;
     padding-left: 80px;
+    border-color: #1e4fff;
     /* padding-right: 100px;  */
 }
 
@@ -99,7 +106,6 @@ h2{
     color: white;
     font-size: 90px;
 }
-
 
 
 #Profile{
