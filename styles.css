@@ -6,9 +6,27 @@
 }
 
 body{
-    background-color: #ff7f94;
+    background-color: #ff607b;
     padding-top: 80px;
 }
+
+/*ScrollBar*/
+::-webkit-scrollbar{
+    width: .5rem;
+    padding: 0 .1rem;
+  }
+  ::-webkit-scrollbar-track{
+    background-color: #af2b41;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: #596eb9;
+    border-radius: 100px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background-color: #1e4fff;
+    transition:  0.5s ;
+}
+  
 
 /*nav bar(Start)*/
 nav{
@@ -22,11 +40,11 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 1.8rem 7%;
 }
 
 h1{
-    font-size: 30px;
+    font-size: 40px;
     color: white;
 }
 
@@ -36,9 +54,9 @@ span{
 }
 
 li,a{
-    color: #466DFF;
-    font-weight:600;
-    font-size: 20px;
+    color: #3862fc;
+    font-weight:700;
+    font-size: 25px;
     text-decoration: none;
 }
 
@@ -57,8 +75,10 @@ nav li a {
 /*Hero*/
 
 .Hero-Container{
-    padding: 3rem;
-    padding-left: 100px;
+    position: relative;
+    width: 100%;
+    padding: 7vh;
+    padding-left: 80px;
     /* padding-right: 100px;  */
 }
 
@@ -66,25 +86,26 @@ nav li a {
     display:flex;
     align-items: center;
     justify-content: space-between;
+    gap: 8rem;
 }
 
 h2{
-    padding-left: 50px;
     color: white;
     font-size: 90px;
 }
 
+
+
 #Profile{
-    height: 500px;
+    height: 550px;
     border-radius: 50%;
+    
 }
 
 .luke,.symon,.alamil{
     color: white;
     transition: all 0.5s ease 0s;
 }
-
-
 
 
 /*About*/
@@ -95,7 +116,7 @@ h2{
 
 /*Projects*/
 
-/*Buttons (Start)*/
+/*Buttons*/
 .BTN_up{
     height: 50px;
     border-radius: 50%;
@@ -134,20 +155,36 @@ nav li a:hover{
     color: rgb(255, 255, 0);
     transition: all 0.5s ease 0s;
 }
+
+
 /*Responsive*/
-@media (max-width: 992px){
+@media (max-width: 1023px){
+
+    .Hero-Container
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Hero{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 15px;
+    }
+    
     nav li a{
         display: none;
     }
-    .Hero-Container{
-        width: 100%;
-    }
-    #Profile{
-        height: 400px;
+   
+    /* #Profile{
+        height: 300px;
     }
     h2{
       font-size: 30px;  
-    }
+    } */
 
 
 }
