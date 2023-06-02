@@ -39,9 +39,10 @@ body{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    padding: 2.8rem 6%; 
+    padding: 2rem 6%; 
     transition: all 0.3s ease;
 }
+
 
 .active-nav{
     
@@ -80,8 +81,8 @@ nav li a {
 
 /*Hero*/
 
-.Hero,.About,.Contacts,.LOL-container{
-    width:100%;
+.nav-container,.Hero,.About,.Contacts,.LOL-container{
+    width:90%;
     max-width: 1300px;
 
 }
@@ -89,22 +90,27 @@ nav li a {
 .Hero-Container{
     /* position: relative; */
     /* width: 100%; */
-    padding: 4.7rem 7vh;
+
+    /* padding: 4.7rem 7vh;
     padding-left: 80px;
-    border-color: #1e4fff;
+    border-color: #1e4fff; */
+
     /* padding-right: 100px;  */
 }
 
 .Hero{
+    margin-left: auto;
+    margin-right: auto;
     display:flex;
     align-items: center;
     justify-content: space-between;
-    gap: 8rem;
+    padding: 4.7rem 7vh;
+    gap: 5rem;
 }
 
 h2{
     color: white;
-    font-size: 90px;
+    font-size: 100px;
 }
 
 
