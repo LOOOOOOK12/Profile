@@ -8,6 +8,7 @@
 body{
     background-color: #ff8499;
     padding-top: 80px;
+    line-height: 1.5;
 }
 
 /*ScrollBar*/
@@ -42,6 +43,7 @@ body{
     padding: 2rem 6%; 
     transition: all 0.3s ease;
 }
+
 
 
 .active-nav{
@@ -82,26 +84,14 @@ nav li a {
 /*Hero*/
 
 .nav-container,.Hero,.About,.Contacts,.LOL-container{
-    width:90%;
-    max-width: 1300px;
-
-}
-
-.Hero-Container{
-    /* position: relative; */
-    /* width: 100%; */
-
-    /* padding: 4.7rem 7vh;
-    padding-left: 80px;
-    border-color: #1e4fff; */
-
-    /* padding-right: 100px;  */
+    max-width:100%;
 }
 
 .Hero{
     margin-left: auto;
     margin-right: auto;
     display:flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 4.7rem 7vh;
@@ -127,8 +117,17 @@ h2{
 
 
 /*About*/
-.Second-container{
-    padding: 7rem 0; 
+.About{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5rem;
+    color: white;
+    background-color: #1e4fff;   
 }
 
 
