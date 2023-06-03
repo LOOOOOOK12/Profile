@@ -42,10 +42,7 @@ body{
     transition: all 0.3s ease;
 }
 
-
-
 .active-nav{
-    
     background-color:#ff6a83;
     box-shadow: 1px 1px 5px #ff5d78;
   }
@@ -69,7 +66,6 @@ li,a{
     font-size: 25px;
     text-decoration: none;
 }
-
 
 ul li{
     list-style: none;
