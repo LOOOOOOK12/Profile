@@ -7,8 +7,7 @@
 
 body{
     background-color: #ff8499;
-    padding-top: 80px;
-    line-height: 1.5;
+    padding-top:80px;
 }
 
 /*ScrollBar*/
@@ -31,8 +30,7 @@ body{
 
 /*nav bar(Start)*/
 #nav-bar{
-    height: 50px;
-    position: fixed;
+    height: 80px;
     top: 0;
     z-index: 15;
     width: 100%;
@@ -57,10 +55,13 @@ h1{
     color: white;
 }
 
-span{
-    cursor: pointer;
-    color: yellow;
+.O{
+    background: -webkit-linear-gradient(left,#ff4160,#1e4fff, #ffff79,rgb(255, 29, 29));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
 }
+
 
 li,a{
     color: #3862fc;
@@ -81,21 +82,24 @@ nav li a {
 }
 
 /*Gobos na kaagan*/
-.Hero,.nav-container,.Home, .About, .Contacts, .Projects{
+.Hero,.nav-container, .About, .Contacts, .Projects{
     max-width: 90%;
 }
+
+/*Home*/
+
 
 
 /*Hero*/
 .Hero{
-    margin-left: auto;
-    margin-right: auto;
     display:flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 4.8rem 7vh;
     gap: 5rem;
+    margin-left: auto;
+   margin-right: auto;
 }
 
 h2{
