@@ -40,7 +40,7 @@ body{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    padding: 2rem 6%; 
+    padding: 2rem 5%; 
     transition: all 0.3s ease;
 }
 
@@ -80,13 +80,13 @@ nav li a {
     transition: all 0.5s ease 0s;
 }
 
-
-/*Hero*/
-
-.nav-container,.Hero,.About,.Contacts,.LOL-container{
-    max-width:100%;
+/*Gobos na kaagan*/
+.Hero,.nav-container,.Home, .About, .Contacts, .Projects{
+    max-width: 90%;
 }
 
+
+/*Hero*/
 .Hero{
     margin-left: auto;
     margin-right: auto;
@@ -94,7 +94,7 @@ nav li a {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 4.7rem 7vh;
+    padding: 4.8rem 7vh;
     gap: 5rem;
 }
 
@@ -116,22 +116,58 @@ h2{
 }
 
 
+
+/*titles*/
+h3{
+    color: white;
+    font-size: 70px;
+}
+
 /*About*/
+
+
 .About{
     display: flex;
-    flex-direction: column;
+    gap: 3em;
     justify-content: center;
     align-items:center;
-    max-width: 50rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 5rem;
+    padding: 4.8rem 7vh;
     color: white;
     background-color: #1e4fff;   
 }
 
 
+/*Contacts*/
+
+.Contacts{
+    color: white;
+    background-color: rgb(38, 0, 141);
+    display: flex;
+    justify-content: center;
+    
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5rem;
+    gap: 3em;
+
+}
+
 /*Projects*/
+
+.Projects{
+    color: white;
+    background-color: rgb(3, 135, 211);
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5rem;
+    gap: 3em;
+}
+
+
 
 /*Buttons*/
 .BTN_up{
