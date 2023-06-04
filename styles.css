@@ -53,15 +53,14 @@ h1{
 }
 
 .O{
-    background: -webkit-linear-gradient(left,#ff4160,#1e4fff, #ffff79,rgb(255, 29, 29));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #577cff;
+   
     
 }
 
 
 li,a{
-    color: #3862fc;
+    color: #4971ff;
     font-weight:700;
     font-size: 25px;
     text-decoration: none;
@@ -78,7 +77,7 @@ nav li a {
 }
 
 /*Gobos na kaagan*/
-.Hero,.nav-container, .About, .Contacts, .Projects{
+.Hero,.nav-container, .About, .Hobbies, .Favorites{
     max-width: 90%;
 }
 
@@ -92,7 +91,7 @@ nav li a {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 4.8rem 7vh;
+    padding: 5rem 7vh;
     gap: 5rem;
     margin-left: auto;
    margin-right: auto;
@@ -114,7 +113,6 @@ h2{
     color: white;
     transition: all 0.5s ease 0s;
 }
-
 
 
 /*titles*/
@@ -139,14 +137,13 @@ h3{
 }
 
 
-/*Contacts*/
+/*Hobbies*/
 
-.Contacts{
+.Hobbies{
     color: white;
     background-color: rgb(38, 0, 141);
     display: flex;
     justify-content: center;
-    
     margin-left: auto;
     margin-right: auto;
     padding: 5rem;
@@ -156,7 +153,7 @@ h3{
 
 /*Projects*/
 
-.Projects{
+.Favorites{
     color: white;
     background-color: rgb(3, 135, 211);
     display: flex;
@@ -225,7 +222,7 @@ nav li a:hover{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        gap: 15px;
+        gap: 80px;
     }
     
     nav li a{
