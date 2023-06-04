@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #ff8499;
+    background-color: #ff8297;
     padding-top:80px;
 }
 
@@ -43,8 +43,8 @@ body{
 }
 
 .active-nav{
-    background-color:#ff6a83;
-    box-shadow: 1px 1px 5px #ff5d78;
+    background-color:#ff627c;
+    box-shadow: 1px 1px 5px #ff5f7a;
   }
 
 h1{
@@ -99,14 +99,14 @@ nav li a {
 
 h2{
     color: white;
-    font-size: 100px;
+    font-size: 95px;
 }
 
 
 #Profile{
     height: 550px;
     border-radius: 50%;
-    
+    transition: all 0.5s ease 0s;;
 }
 
 .luke,.symon,.alamil{
@@ -183,7 +183,27 @@ h3{
 
 /*Animations*/
 nav li a:hover{
-    color: yellow;
+    text-shadow: 0 0 10px #ffff7f, 
+                0 0 20px #ffff7f, 
+                0 0 30px #ffff7f, 
+                0 0 40px #ffff7f, 
+                0 0 50px #ffff7f, 
+                0 0 60px #ffff7f, 
+                0 0 70px #ffff7f, 
+                0 0 80px #ffff7f;
+    color: #ffffc2;
+}
+
+#Profile:hover{
+    box-shadow: 0 0 20px #ffb5c1, 
+                0 0 30px #ffb5c1, 
+                0 0 40px #ffb5c1, 
+                0 0 50px #ffb5c1, 
+                0 0 60px #ffb5c1, 
+                0 0 70px #ffb5c1, 
+                0 0 80px #ffb5c1, 
+                0 0 90px #ffb5c1;
+    transition: all 0.5s ease 0s;
 }
 
 .BTN_up:hover{
@@ -193,16 +213,19 @@ nav li a:hover{
 
 .luke:hover{
     color: #466DFF;
+    text-shadow: 10px 5px #0c1e5c;
     transition: all 0.5s ease 0s;
 }
 
 .symon:hover{
-    color: rgb(253, 49, 49);
+    color: #fd3131;
+    text-shadow: 10px 5px #440d0d;
     transition: all 0.5s ease 0s;
 }
 
 .alamil:hover{
-    color: rgb(255, 255, 0);
+    color: #ffff00;
+    text-shadow: 10px 5px #5f5f0b;
     transition: all 0.5s ease 0s;
 }
 
