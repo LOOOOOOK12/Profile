@@ -26,6 +26,12 @@ body{
     background-color: #1e4fff;
     transition:  0.5s ;
 }
+
+/*darkmode*/
+.darkmode{
+    background-color: #3460ff;
+
+}
   
 
 /*nav bar(Start)*/
