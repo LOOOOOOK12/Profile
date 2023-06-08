@@ -110,7 +110,8 @@ h2{
 
 
 #Profile{
-    height: 550px;
+    position: relative;
+    height:70vh;
     border-radius: 50%;
     transition: all 0.5s ease 0s;;
 }
