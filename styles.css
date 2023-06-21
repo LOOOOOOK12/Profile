@@ -87,6 +87,9 @@ nav li a {
     max-width: 90%;
 }
 
+/*IMAGES*/
+
+
 /*Home*/
 
 
@@ -133,6 +136,7 @@ h3{
 
 .About{
     display: flex;
+    flex-direction: column;
     gap: 3em;
     justify-content: center;
     align-items:center;
