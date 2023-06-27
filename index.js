@@ -5,7 +5,7 @@ const li = document.querySelectorAll(".links");
 const sec = document.querySelectorAll("section")
 
 window.addEventListener('scroll', ()=>{
-    if(window.scrollY >= 100){  //For nav bar
+    if(window.scrollY >= 100){  
         nav.classList.add('active-nav');
     } else{
         nav.classList.remove('active-nav');
