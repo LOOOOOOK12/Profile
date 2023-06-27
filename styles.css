@@ -10,6 +10,10 @@ body{
     padding-top:80px;
 }
 
+html{
+    scroll-snap-type: y mandatory;
+}
+
 /*ScrollBar*/
 ::-webkit-scrollbar{
     width: .5rem;
@@ -59,11 +63,8 @@ h1{
 }
 
 .O{
-    color: #577cff;
-   
-    
+    color: #577cff;   
 }
-
 
 li,a{
     color: #4971ff;
@@ -80,6 +81,7 @@ ul li{
 
 nav li a {
     transition: all 0.5s ease 0s;
+    
 }
 
 /*Gobos na kaagan*/
@@ -93,9 +95,15 @@ nav li a {
 /*Home*/
 
 
+/*Scroll snap*/
+.home-Section,.about-Section,.hobbies-Section,.favorites-Section{
+    scroll-snap-align: start;
+}
 
 /*Hero*/
+
 .Hero{
+    height: 100vh;
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -132,14 +140,13 @@ h3{
 }
 
 /*About*/
-
-
 .About{
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 3em;
     justify-content: center;
     align-items:center;
+    gap: 3em;
     margin-left: auto;
     margin-right: auto;
     padding: 4.8rem 7vh;
@@ -151,10 +158,14 @@ h3{
 /*Hobbies*/
 
 .Hobbies{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 3em;
     color: white;
     background-color: rgb(38, 0, 141);
-    display: flex;
-    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     padding: 5rem;
@@ -165,10 +176,14 @@ h3{
 /*Projects*/
 
 .Favorites{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 3em;
     color: white;
     background-color: rgb(3, 135, 211);
-    display: flex;
-    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     padding: 5rem;
@@ -238,6 +253,18 @@ nav li a:hover{
     color: #ffff00;
     text-shadow: 10px 5px #5f5f0b;
     transition: all 0.5s ease 0s;
+}
+
+.active{
+    text-shadow: 0 0 10px #ffff7f, 
+                0 0 20px #ffff7f, 
+                0 0 30px #ffff7f, 
+                0 0 40px #ffff7f, 
+                0 0 50px #ffff7f, 
+                0 0 60px #ffff7f, 
+                0 0 70px #ffff7f, 
+                0 0 80px #ffff7f;
+    color:#ffffc2;
 }
 
 
