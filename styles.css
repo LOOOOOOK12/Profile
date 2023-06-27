@@ -92,7 +92,7 @@ nav li a {
 }
 
 /*Gobos na kaagan*/
-.Hero,.nav-container, .About, .Hobbies, .Favorites{
+.Home,.nav-container, .About, .Hobbies, .Favorites{
     max-width: 90%;
 }
 
@@ -107,18 +107,17 @@ nav li a {
     scroll-snap-align: start;
 }
 
-/*Hero*/
+/*home*/
 
-.Hero{
+.Home{
     height: 100vh;
     display:flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     padding: 5rem 7vh;
     gap: 5rem;
     margin-left: auto;
-   margin-right: auto;
+    margin-right: auto;
 }
 
 h2{
@@ -278,31 +277,23 @@ nav li a:hover{
 /*Responsive*/
 @media (max-width: 1023px){
 
-    .Hero-Container
-    {
+    .Home{
         display: flex;
-        justify-content: center;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        align-items:center;
     }
 
-    .Hero{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 80px;
-    }
-    
     nav li a{
         display: none;
     }
    
-    /* #Profile{
-        height: 300px;
+    #Profile{
+        height: 50vh;
     }
-    h2{
-      font-size: 30px;  
-    } */
+    h2{ 
+      font-size: 60px;  
+    }
 
 
 }
