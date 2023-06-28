@@ -104,7 +104,7 @@ nav li a {
 
 
 /*Scroll snap*/
-.home-Section,.about-Section,.hobbies-Section,.favorites-Section{
+.home-Section,.about-Section,.hobbies-Section,.favorites-Section,.Footer-Section{
     scroll-snap-align: start;
 }
 
@@ -163,11 +163,14 @@ h3{
 }
 
 .Carosel{
-    width: 640px;
+    width: 670px;
     display: flex;
     position: relative;
     scroll-snap-type: x mandatory;
-    overflow-x: scroll;
+    overflow-x: scroll; 
+}
+.Carosel ::-webkit-scrollbar{
+    display: none;
 }
 
 .Carosel img{
@@ -179,7 +182,6 @@ h3{
 .about-contents{
     background-color: #fd3131;
     text-align: center;
-    
 }
 
 
@@ -198,8 +200,6 @@ h3{
     margin-left: auto;
     margin-right: auto;
     padding: 5rem;
-    gap: 3em;
-
 }
 
 /*Projects*/
@@ -216,8 +216,26 @@ h3{
     margin-left: auto;
     margin-right: auto;
     padding: 5rem;
-    gap: 3em;
+   
 }
+
+.Footer{
+    color: white;
+    padding-top: 2em;
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.Footer span{
+    color: rgb(255, 111, 111);
+}
+
+.sites img{
+    height: 40px;
+    margin: 8px;
+}
+
 
 
 
