@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #ff8297;
+    background-color: #ff97b7;
     padding-top:80px;
 }
 
@@ -21,7 +21,7 @@ html{
     padding: 0 .1rem;
   }
   ::-webkit-scrollbar-track{
-    background-color: transparent;
+    background: transparent;
   }
   ::-webkit-scrollbar-thumb{
     background-color: #596eb9;
@@ -38,7 +38,7 @@ html{
 }
   
 
-/*nav bar(Start)*/
+/*nav*/
 #nav-bar{
     height: 80px;
     top: 0;
@@ -48,14 +48,14 @@ html{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    padding: 2rem 5%; 
+    padding: 1.5rem 5%; 
     transition: all 0.3s ease;
     
 }
 
 .active-nav{
-    background-color:#ff627c;
-    box-shadow: 1px 1px 5px #ff5f7a;
+    background-color:#ff5d8f;
+    box-shadow: 1px 1px 5px #ff5d8f;
   }
 
 h1{
@@ -69,15 +69,15 @@ h1{
 
 li,a{
     color: #4971ff;
-    font-weight:700;
-    font-size: 25px;
+    font-weight:600;
+    font-size: 20px;
     text-decoration: none;
 }
 
 ul li{
     list-style: none;
     display: inline-block;
-    padding: 0px 30px;
+    padding-left: 40px;
 }
 
 nav li a {
@@ -93,7 +93,7 @@ nav li a {
 }
 
 /*Gobos na kaagan*/
-.Home,.nav-container, .About, .Hobbies, .Favorites{
+.Home,.nav-container, .About, .Hobbies, .Favorites,.Contacts{
     max-width: 90%;
 }
 
@@ -104,7 +104,7 @@ nav li a {
 
 
 /*Scroll snap*/
-.home-Section,.about-Section,.hobbies-Section,.favorites-Section,.Footer-Section{
+.home-Section,.about-Section,.hobbies-Section,.favorites-Section,.contacts-Section,.Footer-Section{
     scroll-snap-align: start;
 }
 
@@ -158,14 +158,13 @@ h3{
     margin-left: auto;
     margin-right: auto;
     gap: 5rem;
-    padding: 4.8rem 7vh;
     color: white;
-    border: 3px solid red;
+    /* border: 3px solid red; */
     /* background-color: #1e4fff;    */
 }
 
 .Carosel{
-    
+    height: 34em;
     width: 100%;
     display: flex;
     scroll-snap-type: x mandatory;
@@ -177,7 +176,6 @@ h3{
 
 .Carosel img{
    width: 100%;
-   
    flex-shrink: 0;
    scroll-snap-align: start;
    
@@ -232,7 +230,27 @@ h3{
    
 }
 
+
+/*Contact*/
+.Contacts{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 3em;
+    color: white;
+    border: 3px solid red;
+    /* background-color: #0387d3; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5rem;
+
+}
+
+
 .Footer{
+    max-width: 100%;
     color: white;
     padding-top: 2em;
     background: pink;
@@ -240,6 +258,7 @@ h3{
     flex-direction: column;
     align-items:center;
 }
+
 /*Bocchi the span*/
 .bocchi{
     color: rgb(255, 169, 169);
