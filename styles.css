@@ -111,6 +111,7 @@ nav li a {
 /*home*/
 
 .Home{
+    /* border: 3px solid red; */
     height: 100vh;
     display:flex;
     flex-direction: row;
@@ -180,7 +181,6 @@ h3{
 }
 
 .about-contents{
-    background-color: #fd3131;
     text-align: center;
 }
 
@@ -212,7 +212,7 @@ h3{
     align-items:center;
     gap: 3em;
     color: white;
-    background-color: rgb(3, 135, 211);
+    background-color: #0387d3;
     margin-left: auto;
     margin-right: auto;
     padding: 5rem;
@@ -227,13 +227,24 @@ h3{
     flex-direction: column;
     align-items:center;
 }
-.Footer span{
-    color: rgb(255, 111, 111);
+/*Bocchi the span*/
+.bocchi{
+    color: rgb(255, 169, 169);
 }
+.kita{
+    color: #ff0000;
+}
+.nijika{
+    color: #ffff8a;
+}
+.ryo{
+    color: #466DFF;
+}
+
 
 .sites img{
     height: 40px;
-    margin: 8px;
+    margin: 5px;
 }
 
 
