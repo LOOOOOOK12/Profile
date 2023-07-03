@@ -6,8 +6,7 @@
 }
 
 body{
-    background-color: #ff97b7;
-    padding-top:80px;
+    background-color: #fcb0c7;
 }
 
 html{
@@ -53,31 +52,34 @@ html{
     
 }
 
-.active-nav{
+/* .active-nav{
     background-color:#ff5d8f;
     box-shadow: 1px 1px 5px #ff5d8f;
-  }
+  } */
 
 h1{
     font-size: 40px;
-    color: white;
+    color: #ff477e;
 }
 
 .O{
     color: #577cff;   
 }
+.Hitori{
+    color: #ff477e;
+}
 
 li,a{
-    color: #4971ff;
-    font-weight:600;
-    font-size: 20px;
+    color: #ff477e;
+    font-weight:bold;
+    font-size: 23px;
     text-decoration: none;
 }
 
 ul li{
     list-style: none;
     display: inline-block;
-    padding-left: 40px;
+    padding-left: 30px;
 }
 
 nav li a {
@@ -94,7 +96,7 @@ nav li a {
 
 /*Gobos na kaagan*/
 .Home,.nav-container, .About, .Hobbies, .Favorites,.Contacts{
-    max-width: 90%;
+    width: 90%; 
 }
 
 /*IMAGES*/
@@ -106,7 +108,9 @@ nav li a {
 /*Scroll snap*/
 .home-Section,.about-Section,.hobbies-Section,.favorites-Section,.contacts-Section,.Footer-Section{
     scroll-snap-align: start;
+    
 }
+
 
 /*home*/
 
@@ -116,15 +120,15 @@ nav li a {
     display:flex;
     flex-direction: row;
     align-items: center;
-    padding: 5rem 7vh;
-    gap: 5rem;
+    padding: 3rem 5rem 7vh;
+    gap: 2.5rem;
     margin-left: auto;
     margin-right: auto;
 }
 
 h2{
     text-align: center;
-    color: white;
+    color: #ff477e;
     font-size: 95px;
 }
 
@@ -137,7 +141,7 @@ h2{
 }
 
 .luke,.symon,.alamil{
-    color: white;
+    color: #ff477e;
     transition: all 0.5s ease 0s;
 }
 
@@ -145,7 +149,7 @@ h2{
 /*titles*/
 h3{
     color: white;
-    font-size: 70px;
+    font-size: 60px;
 }
 
 /*About*/
@@ -157,15 +161,15 @@ h3{
     align-items:center;
     margin-left: auto;
     margin-right: auto;
-    gap: 5rem;
+    gap: 3rem;
     color: white;
     /* border: 3px solid red; */
     /* background-color: #1e4fff;    */
 }
 
 .Carosel{
-    height: 34em;
-    width: 100%;
+    height: 30rem;
+    width: 70%;
     display: flex;
     scroll-snap-type: x mandatory;
     overflow-x: auto; 
@@ -185,9 +189,8 @@ h3{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 3px solid red;
-    max-width:100% ;
-    height: 34em;
+    gap: 1.5em;
+    /* border: 3px solid red; */
 }
 
 
@@ -201,7 +204,7 @@ h3{
     align-items:center;
     gap: 3em;
     color: white;
-    border: 3px solid red;
+    /* border: 3px solid red; */
     /* background-color: rgb(38, 0, 141); */
     margin-left: auto;
     margin-right: auto;
@@ -222,7 +225,7 @@ h3{
     align-items:center;
     gap: 3em;
     color: white;
-    border: 3px solid red;
+    /* border: 3px solid red; */
     /* background-color: #0387d3; */
     margin-left: auto;
     margin-right: auto;
@@ -240,7 +243,7 @@ h3{
     align-items:center;
     gap: 3em;
     color: white;
-    border: 3px solid red;
+    /* border: 3px solid red; */
     /* background-color: #0387d3; */
     margin-left: auto;
     margin-right: auto;
@@ -253,7 +256,7 @@ h3{
     max-width: 100%;
     color: white;
     padding-top: 2em;
-    background: pink;
+    background: #ff7096;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -278,9 +281,6 @@ h3{
     height: 40px;
     margin: 5px;
 }
-
-
-
 
 /*Buttons*/
 .BTN_up{
@@ -380,17 +380,18 @@ nav li a:hover{
     }
 
     .About{
-        width: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items:center;
     }
 
     
     .Carosel{
-        height: 50vh;
+        height: 50%;
         object-fit: cover;
-        width: 100%;
+        width: 50%;
     }
 
 
