@@ -4,13 +4,13 @@ const up = document.getElementById("Up");
 const li = document.querySelectorAll(".links");
 const sec = document.querySelectorAll("section")
 
-window.addEventListener('scroll', ()=>{
-    if(window.scrollY >= 100){  
-        nav.classList.add('active-nav');
-    } else{
-        nav.classList.remove('active-nav');
-    }
-});
+// window.addEventListener('scroll', ()=>{
+//     if(window.scrollY >=  50){  
+//         nav.classList.add('active-nav');
+//     } else{
+//         nav.classList.remove('active-nav');
+//     }
+// });
 
 up.addEventListener('click', () => {
     window.scrollTo({
@@ -31,7 +31,14 @@ window.addEventListener("scroll",activeMenu);
 
 
 
+const ako = 'bobo' 
 
+if(ako === 'bobo'){
+    console.log('bobo ka')
+}
+else{
+    console.log('bobo ka parin')
+}
 
   
 
