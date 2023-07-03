@@ -311,14 +311,14 @@ nav li a:hover{
 }
 
 #Profile:hover{
-    box-shadow: 0 0 20px #ffb5c1, 
-                0 0 30px #ffb5c1, 
-                0 0 40px #ffb5c1, 
-                0 0 50px #ffb5c1, 
-                0 0 60px #ffb5c1, 
-                0 0 70px #ffb5c1, 
-                0 0 80px #ffb5c1, 
-                0 0 90px #ffb5c1;
+    box-shadow: 0 0 20px #ffffff, 
+                0 0 30px #ffffff, 
+                0 0 40px #ffffff, 
+                0 0 50px #ffffff, 
+                0 0 60px #ffffff, 
+                0 0 70px #ffffff, 
+                0 0 80px #ffffff, 
+                0 0 90px #ffffff;
     transition: all 0.5s ease 0s;
 }
 
