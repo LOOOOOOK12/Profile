@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/x-icon" href="PICTURES\bocchi.ico" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Bocchi the Website</title>
   </head>
@@ -32,8 +29,8 @@
       </div> -->
 
       <section class="home-Section" id="S-home">
-        <div class="nav-container">
-          <nav id="nav-bar" class="active-nav">
+        <div class="nav-container" >
+          <nav id="nav-bar" class="active-nav" >
             <div class="Logo">
               <h1>
                 L<span class="kita">OO</span><span class="ryo">OO<span class="nijika">OO</span><span class="Hitori">K</span>
@@ -48,14 +45,15 @@
             </ul>
           </nav>
         </div>
-        <div class="Home">
+        <div class="Home" >
           <img
             id="Profile"
             src="PICTURES\1687766808368.jpg"
             alt="LOGO"
-            loading="lazy"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
           />
-          <h2>
+          <h2 data-aos="fade-left"  data-aos-duration="500">
             HELLO! I'M <span class="luke">Luke</span>
             <span class="symon">Symon</span>
             <span class="alamil">Alamil!</span>
@@ -64,8 +62,8 @@
       </section>
 
       <section class="about-Section" id="S-About">
-        <div class="About">
-          <div class="Carosel">
+        <div class="About" >
+          <div class="Carosel" data-aos="fade-right" data-aos-duration="1000"  data-aos-offset="500">
             <img
               class="A1"
               src="PICTURES\2d15a06f74557fb74881d9fe906f3f5a.jpg"
@@ -82,7 +80,7 @@
               alt=""
             />
           </div>
-          <div class="about-contents">
+          <div class="about-contents" data-aos="fade-down" data-aos-duration="500">
             <h3 class="about-Title">ABOUT ME</h3>
             <p>
               I'm an aspiring programmer, eager to learn new things in the
@@ -116,13 +114,13 @@
       </section>
       <section class="contacts-Section" id="S-Contacts">
         <div class="Contacts">
-          <div id="Inputs">
+          <div id="Inputs" data-aos="fade-right" data-aos-duration="1000">
             <input type="text" id="name" placeholder="Enter you fullname">
-            <input type="text" id="E-mail" placeholder="Enter your E-mail">
+            <input type="email" id="E-mail" placeholder="Enter your E-mail">
             <textarea name="message" id="Message" cols="30" rows="10" placeholder="Message Me!"></textarea>
             <button id="Send">Send Message</button>
           </div>
-          <div id="contactMe">
+          <div id="contactme-Contents" data-aos="fade-down" data-aos-duration="1000">
             <h3>Contact Me</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
@@ -164,7 +162,10 @@
         </footer>
       </section>
 
-      <script src="darkmode.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
       <script src="index.js"></script>
     </main>
   </body>
