@@ -242,7 +242,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items:center;
-    gap: 2em;
+    gap: 1.5em;
     color: #ff477e;
     /* border: 3px solid red; */
     /* background-color: #0387d3; */
@@ -251,6 +251,7 @@ h3{
 }
 
 #Inputs{
+    height: 50%;
     width: 100%;
     min-width: 400px;
     display: flex;
@@ -278,20 +279,19 @@ input,textarea{
     flex-direction: column;
     align-items: center;
     text-align: justify;
-    gap: 1em;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: rgb(255, 87, 87);
+    color: #ff477e;
     opacity: 1; /* Firefox */
   }
 
 #Send{
     font-weight: bold;
-    color: #ff477e;
+    color:  white;
     padding: .9em;
-    background: transparent;
-    border: 2px solid #ff477e;
+    background: #ff477e;
+    border: none;
     transition: all 0.2s ease-in-out;
 }
 
@@ -367,7 +367,7 @@ nav li a:hover{
 }
 
 #Send:hover{
-    background: rgb(255, 255, 160);
+    background: #ff2e6d;
     transition: all 0.5s ease-in-out;
 }
 
@@ -413,6 +413,7 @@ nav li a:hover{
     .Home{
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
         align-items:center;
     }
@@ -422,7 +423,8 @@ nav li a:hover{
     }
    
     #Profile{
-        height: 50vh;
+       height: 80%;
+       width: 80%;
     }
     h2{ 
       font-size: 60px;  
@@ -439,8 +441,9 @@ nav li a:hover{
     
     .Carosel{
         height: 50%;
-        object-fit: cover;
         width: 50%;
+        object-fit: cover;
+        
     }
 
     .Contacts{
