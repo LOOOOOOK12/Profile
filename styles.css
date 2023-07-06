@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #fcb0c7;
+    background-color: #ffd3e2;
 }
 
 html{
@@ -148,7 +148,7 @@ h2{
 
 /*titles*/
 h3{
-    color: white;
+    color: #ff477e;
     font-size: 60px;
 }
 
@@ -162,7 +162,7 @@ h3{
     margin-left: auto;
     margin-right: auto;
     gap: 3rem;
-    color: white;
+    color: #ff477e;
     /* border: 3px solid red; */
     /* background-color: #1e4fff;    */
 }
@@ -203,7 +203,7 @@ h3{
     justify-content: center;
     align-items:center;
     gap: 3em;
-    color: white;
+    color: #ff477e;
     /* border: 3px solid red; */
     /* background-color: rgb(38, 0, 141); */
     margin-left: auto;
@@ -224,7 +224,7 @@ h3{
     justify-content: center;
     align-items:center;
     gap: 3em;
-    color: white;
+    color: #ff477e;
     /* border: 3px solid red; */
     /* background-color: #0387d3; */
     margin-left: auto;
@@ -238,17 +238,47 @@ h3{
 .Contacts{
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items:center;
     gap: 3em;
-    color: white;
+    color: #ff477e;
     /* border: 3px solid red; */
     /* background-color: #0387d3; */
     margin-left: auto;
     margin-right: auto;
-    padding: 5rem;
+   
+}
 
+#Inputs{
+    width: 100%;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap:.9rem;
+}
+
+input{
+    background: transparent;
+    border: 2px solid #ff477e;
+}
+
+#name,#E-mail{
+    padding: .4em;
+}
+#Message{
+    height: 20rem;
+}
+
+#contactMe{
+    text-align: center;
+}
+
+#Send{
+    font-weight: bold;
+    color: #ff477e;
+    padding: .9em;
+    background: transparent;
+    border: 2px solid #ff477e;
 }
 
 
