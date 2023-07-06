@@ -189,6 +189,8 @@ h3{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: justify;
     gap: 1.5em;
     /* border: 3px solid red; */
 }
@@ -240,13 +242,12 @@ h3{
     display: flex;
     justify-content: center;
     align-items:center;
-    gap: 3em;
+    gap: 2em;
     color: #ff477e;
     /* border: 3px solid red; */
     /* background-color: #0387d3; */
     margin-left: auto;
-    margin-right: auto;
-   
+    margin-right: auto; 
 }
 
 #Inputs{
@@ -272,8 +273,12 @@ input,textarea{
     height: 20rem;
 }
 
-#contactMe{
-    text-align: center;
+#contactme-Contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    gap: 1em;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -287,6 +292,7 @@ input,textarea{
     padding: .9em;
     background: transparent;
     border: 2px solid #ff477e;
+    transition: all 0.2s ease-in-out;
 }
 
 
@@ -359,8 +365,9 @@ nav li a:hover{
                 0 0 90px #ffffff;
     transition: all 0.5s ease 0s;
 }
+
 #Send:hover{
-    background: rgb(255, 255, 132);
+    background: rgb(255, 255, 160);
     transition: all 0.5s ease-in-out;
 }
 
@@ -436,6 +443,17 @@ nav li a:hover{
         width: 50%;
     }
 
+    .Contacts{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items:center;
+    }
+    #Inputs{
+       width: 50%;
+        
+    }
 
 }
 
