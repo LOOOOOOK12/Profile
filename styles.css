@@ -257,7 +257,9 @@ h3{
     gap:.9rem;
 }
 
-input{
+input,textarea{
+    resize: none;
+    outline: none;
     background: transparent;
     border: 2px solid #ff477e;
 }
@@ -266,12 +268,18 @@ input{
     padding: .4em;
 }
 #Message{
+    padding: .4em;
     height: 20rem;
 }
 
 #contactMe{
     text-align: center;
 }
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(255, 87, 87);
+    opacity: 1; /* Firefox */
+  }
 
 #Send{
     font-weight: bold;
@@ -350,6 +358,10 @@ nav li a:hover{
                 0 0 80px #ffffff, 
                 0 0 90px #ffffff;
     transition: all 0.5s ease 0s;
+}
+#Send:hover{
+    background: rgb(255, 255, 132);
+    transition: all 0.5s ease-in-out;
 }
 
 .BTN_up:hover{
