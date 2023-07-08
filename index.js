@@ -7,6 +7,8 @@ const sec = document.querySelectorAll("section");
 const burgir = document.getElementById("hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
+
+/*burgir Function*/
 burgir.addEventListener("click", () => {
   burgir.classList.toggle("active");
   navMenu.classList.toggle("active");
@@ -26,6 +28,7 @@ document.querySelectorAll(".links").forEach(n => n.addEventListener("click", ()=
 //     }
 // });
 
+/*up button ( to home)*/
 up.addEventListener('click', () => {
     window.scrollTo({
       top: 0,
@@ -39,20 +42,10 @@ function activeMenu(){
     li.forEach(ltx => ltx.classList.remove("active"));
     li[len].classList.add("active");
 }
-
 activeMenu();
+
 window.addEventListener("scroll",activeMenu);
 
-
-
-const ako = 'bobo' 
-
-if(ako === 'bobo'){
-    console.log('bobo ka')
-}
-else{
-    console.log('bobo ka parin')
-}
 
   
 
