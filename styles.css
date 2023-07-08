@@ -86,6 +86,22 @@ nav li a {
     transition: all 0.5s ease 0s; 
 }
 
+/*BURGIR*/
+#hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+#bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition:all 0.3 ease-in-out;
+    background-color: #ff477e;
+}
+
 
 #BTN-dark{
     background-color: transparent;
@@ -168,6 +184,7 @@ h3{
 }
 
 .Carosel{
+    position:relative;
     height: 30rem;
     width: 70%;
     display: flex;
@@ -181,8 +198,7 @@ h3{
 .Carosel img{
    width: 100%;
    flex-shrink: 0;
-   scroll-snap-align: start;
-   
+   scroll-snap-align: start; 
 }
 
 .about-contents{
@@ -191,8 +207,6 @@ h3{
     justify-content: center;
     align-items: center;
     text-align: justify;
-    gap: 1.5em;
-    /* border: 3px solid red; */
 }
 
 
@@ -418,10 +432,6 @@ nav li a:hover{
         align-items:center;
     }
 
-    nav li a{
-        display: none;
-    }
-   
     #Profile{
        height: 80%;
        width: 80%;
@@ -454,9 +464,45 @@ nav li a:hover{
         align-items:center;
     }
     #Inputs{
-       width: 50%;
-        
+       width: 50%;   
     }
+
+    #hamburger{
+        display: block;
+    }
+
+    #hamburger.active #bar:nth-child(2){
+        opacity: 0;
+    }
+
+    #hamburger.active #bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #hamburger.active #bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top:70px;
+        gap:0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    li{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+
 
 }
 
