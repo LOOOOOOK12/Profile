@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #ffd3e2;
+    background-color: #ffe0e9;
 }
 
 html{
@@ -132,7 +132,7 @@ nav li a {
 
 .Home{
     /* border: 3px solid red; */
-    min-height: 100vh;
+    min-height: 100svh;
     display:flex;
     flex-direction: row;
     align-items: center;
