@@ -8,7 +8,7 @@ const burgir = document.getElementById("hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
 var typed = new Typed(".auto-type", {
-    strings: ["Coder", "Weeb", "Taga ayos ng ref" , "Web Developer"],
+    strings: ["Programmer", "Sapot Developer","Weeb", "Taga ayos ng ref" ],
     typeSpeed: 150,
     backSpeed: 150,
     loop:true
