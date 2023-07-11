@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/x-icon" href="PICTURES\bocchi.ico" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
     <title>Bocchi the Website</title>
   </head>
@@ -61,29 +62,69 @@
 
       <section class="about-Section" id="S-About">
         <div class="About" >
-          <div class="Carosel" data-aos="fade-right" data-aos-duration="1000"  data-aos-offset="500">
-            <img
-              class="A1"
-              src="PICTURES\2d15a06f74557fb74881d9fe906f3f5a.jpg"
-              alt=""
-            />
-            <img
-              class="A2"
-              src="PICTURES\af3405a335399041f905211cc2f45edf.jpg"
-              alt=""
-            />
-            <img
-              class="A3"
-              src="PICTURES\b4e9bf76b50271edd49cf0eb140fe7b4.jpg"
-              alt=""
-            />
+          <div class="swiper" data-aos="fade-right" data-aos-duration="500">
+            <div class="swiper-wrapper">
+             
+              <div class="swiper-slide"><img
+                id="slider-1"
+                class="A1"
+                src="PICTURES\2d15a06f74557fb74881d9fe906f3f5a.jpg"
+                alt=""
+              /></div>
+              <div class="swiper-slide"><img
+                id="slider-2"
+                class="A2"
+                src="PICTURES\af3405a335399041f905211cc2f45edf.jpg"
+                alt=""
+              /></div>
+              <div class="swiper-slide"><img
+                id="slider-3"
+                class="A2"
+                src="PICTURES\0a77ab9b741887432031c9d0670ac3f3.jpg"
+                alt=""
+              /></div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
+
+          <!-- <div class="carosel-Wrapper" data-aos="fade-right" data-aos-duration="1000"  data-aos-offset="500">
+            <div class="slider">
+              <img
+                id="slider-1"
+                class="A1"
+                src="PICTURES\2d15a06f74557fb74881d9fe906f3f5a.jpg"
+                alt=""
+              />
+              <img
+                id="slider-2"
+                class="A2"
+                src="PICTURES\af3405a335399041f905211cc2f45edf.jpg"
+                alt=""
+              />
+              <img
+                id="slider-3"
+                class="A3"
+                src="PICTURES\b4e9bf76b50271edd49cf0eb140fe7b4.jpg"
+                alt=""
+              />
+          </div>
+            <div class="slider-Nav">
+              <a href="#slider-1"></a>
+              <a href="#slider-2"></a>
+              <a href="#slider-3"></a>
+            </div>
+          </div> -->
+
           <div class="about-contents" data-aos="fade-down" data-aos-duration="500">
             <h3 class="about-Title">ABOUT ME</h3>
             <p>
               I'm an aspiring programmer, eager to learn new things in the
               fields of programming. I also wanted to be a full stack web
-              developer. Ands I love Bocchi the Rock!
+              developer. And I love Bocchi the Rock!
             </p>
           </div>
         </div>
@@ -91,6 +132,11 @@
 
       <section class="hobbies-Section" id="S-Hobbies">
         <div class="Hobbies">
+
+          <div id="grid">
+
+          </div>
+
           <div class="hobbies-content">
             <h3>Hobbies</h3>
             <p>
@@ -112,12 +158,16 @@
       </section>
       <section class="contacts-Section" id="S-Contacts">
         <div class="Contacts">
+
           <div id="Inputs" data-aos="fade-right" data-aos-duration="1000">
-            <input type="text" id="name" placeholder="Enter you fullname">
-            <input type="email" id="E-mail" placeholder="Enter your E-mail">
-            <textarea name="message" id="Message" cols="30" rows="10" placeholder="Message Me!"></textarea>
-            <button id="Send">Send Message</button>
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <input type="text" id="name" placeholder="Enter you fullname">
+                <input type="email" id="E-mail" placeholder="Enter your E-mail">
+                <textarea name="message" id="Message" cols="30" rows="10" placeholder="Message Me!"></textarea>
+                <button type="submit" id="send">Send Message</button>
+            </form>
           </div>
+        
           <div id="contactme-Contents" data-aos="fade-down" data-aos-duration="1000">
             <h3>Contact Me</h3>
             <p>
@@ -167,6 +217,53 @@
         AOS.init();
       </script>
       <script src="index.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+      <script>
+        const swiper = new Swiper('.swiper', {
+          // Optional parameters
+          autoplay:{
+            delay:3000,
+            disbleOnInteraction: false,
+          },
+          loop: true,
+        
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+        
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        
+          
+        });
+      </script>
+
+      <!-- <script src="https://smtpjs.com/v3/smtp.js">
+      </script>
+
+        <script>
+
+          /* SECURITY TOKEN: 54a21aea-43c8-4692-b3d0-4991224c350e*/
+
+          function sendEmail(){
+              Email.send({
+                SecureToken : "54a21aea-43c8-4692-b3d0-4991224c350e",
+                To : 'lukealamil12@gmail.com',
+                From :  document.getElementById('E-mail').value,
+                Subject : "New contact from",
+                Body : `Message: ${document.getElementById('Message').value}`
+            }).then(
+              message => alert(message)
+            );
+          }
+        </script> -->
     </main>
   </body>
 </html>
