@@ -215,57 +215,6 @@ h3{
     position: relative;
 }
 
-/* .carosel-Wrapper{
-    position:relative;
-    height: 30rem;
-    width: 50rem;
-    
-}
-
-.slider{
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    border-radius: 1rem;
-}
-
-.slider::-webkit-scrollbar{
-    display: none;
-}
-
-.slider img{
-    scroll-snap-align: start; 
-    object-fit: cover;
-    width: 100%;
- }
-
-
-.slider-Nav{
-    display: flex;
-    column-gap: 1rem;
-    position: relative;
-    bottom: 2rem;
-    left: 94%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-.slider-Nav a{
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
-}
-
-.slider-Nav a:hover{
-    opacity: 1;
-} */
-
-
-
 .about-contents{
     display: flex;
     flex-direction: column;
@@ -307,7 +256,6 @@ h3{
 #grid-Pics img{
     height: 20rem;
     width: 20rem;
-    object-fit: cover;
 }
 
 #pic1{
@@ -534,8 +482,7 @@ nav li a:hover{
     }
 
     #Profile{
-       height: 25rem;
-       
+       height: 25rem; 
     }
     h2{ 
       font-size: 3rem;  
@@ -552,7 +499,6 @@ nav li a:hover{
     .swiper{
         height: 20rem;
         width: 20rem;
-        object-fit: cover;
     }
 
     .Hobbies{
@@ -565,16 +511,13 @@ nav li a:hover{
 
     #grid-Pics{ 
         display: grid;
-        grid-row-gap: .5rem;
-        grid-column-gap: .5rem;
-        grid-template-columns: 8rem 8rem 8rem 8rem;
-        grid-template-rows:8rem 8rem 8rem 8rem ;
+        grid-template-columns: 6rem 6em 6rem 6rem;
+        grid-template-rows:6rem 6rem 6rem 6rem ;
     }
 
     #grid-Pics img{
-        height: 16rem;
-        width: 16rem;
-
+        height: 12rem;
+        width: 12rem;
     }
 
     .Contacts{
