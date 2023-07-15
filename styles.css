@@ -5,15 +5,17 @@
     font-family: 'Oswald', sans-serif;
 }
 
-:root {
-    --color-lightBG: #ffe9ef;
-    --color-lightText: #ff477e;
-    --color-lightType: #466DFF;
-    --color-lightFooter: #ff6a97;
-    --color-lightSendButton: #ff477e;
-    --color-lightSendButtonHover: #ff195e;
-    --color-lightScroll: #596eb9;
-    --color-lightScrollHover: #1e4fff;
+:root {                          /*ALT*/
+    --color-lightBG: #ffe9ef; /*BG*/ /*#ffe9ef*/
+    --color-lightText: #ff477e;/*text*/ /*#ff477e*/
+    --color-lightType: #466DFF;/*Accent*/ /*#466DFF*/
+    --color-buttonHover:#ff477e;/*Accent*/ /*#ff477e*/
+    --color-lightFooter: #ff6a97;/*Primary*/ /*#ff6a97*/
+    --color-lightSendButton: #ff477e;/*Primary*/ /*#ff477e*/
+    --color-lightSendButtonHover: #ff195e;/*Custom*/ /*#ff195e*/
+    --color-lightScroll: #ff477e;/*Accent*/ /*#ff477e*/
+    --color-lightScrollHover: #ff195e;/*Custom*//*#ff195e*/
+    --color-listHover:#ff95b5;
     --color-Bocchi: #ffa9a9;
     --color-Kita: #ff0000;
     --color-Ryo: #466DFF;
@@ -21,14 +23,16 @@
 }
 
 .change {
-    --color-lightBG: #00005e;
-    --color-lightText: #c7c7ff;
-    --color-lightType: #ff477e;
-    --color-lightFooter: #6c6cff;
-    --color-lightSendButton: #5b5bff;
-    --color-lightSendButtonHover: #7676ff;
-    --color-lightScroll: #ff477e;
-    --color-lightScrollHover: #ff2767;
+    --color-lightBG: #020f24;/*BG*/ /*#021431*/
+    --color-lightText: #ebf3fe;/*text*/ /*#ebf3fe*/
+    --color-lightType: #ff477e;/*Accent*/ /*#ff477e*/
+    --color-buttonHover:#0960ec;/*Accent*/ /*#0960ec*/
+    --color-lightFooter: #042c6c;/*Primary*/ /*#042c6c*/
+    --color-lightSendButton: #042c6c;/*Primary*/ /*#042c6c*/
+    --color-lightSendButtonHover: #09419c;/*Custom*/ /*#09419c*/
+    --color-lightScroll: #0960ec;/*Accent*/ /*#0960ec*/
+    --color-lightScrollHover: #0852c9;/*Custom*/ /*#0852c9*/
+    --color-listHover:#8f83ff;
     --color-Bocchi: #ffa9a9;
     --color-Kita: #ff0000;
     --color-Ryo: #466DFF;
@@ -250,12 +254,12 @@ h3 {
 .swiper-slide img {
     object-fit: cover;
     width: 100%;
+    height: 30rem;
 }
 
 .swiper-pagination {
     position: relative;
 }
-
 .about-contents {
     width: 100%;
     gap: 2rem;
@@ -510,7 +514,7 @@ textarea {
     height: 50px;
     border-radius: 50%;
     cursor: pointer;
-    border: 3px solid var(--color-lightType);
+    border: 3px solid var(--color-buttonHover);
     background-color: transparent;
     bottom: 0;
     right: 0;
@@ -523,15 +527,15 @@ textarea {
 
 /*Animations*/
 nav li a:hover {
-    text-shadow: 0 0 10px #ffff7f,
-        0 0 20px #ffff7f,
-        0 0 30px #ffff7f,
-        0 0 40px #ffff7f,
-        0 0 50px #ffff7f,
-        0 0 60px #ffff7f,
-        0 0 70px #ffff7f,
-        0 0 80px #ffff7f;
-    color: #ffffc2;
+    text-shadow: 0 0 20px var(--color-listHover),
+        0 0 30px var(--color-listHover),
+        0 0 40px var(--color-listHover),
+        0 0 50px var(--color-listHover),
+        0 0 60px var(--color-listHover),
+        0 0 70px var(--color-listHover),
+        0 0 80px var(--color-listHover),
+        0 0 90px var(--color-listHover);
+    color: var(--color-listHover);
 }
 
 #Profile:hover {
@@ -575,15 +579,15 @@ nav li a:hover {
 }
 
 .active {
-    text-shadow: 0 0 10px #ffff4b,
-        0 0 20px #ffff4b,
-        0 0 30px #ffff4b,
-        0 0 40px #ffff4b,
-        0 0 50px #ffff4b,
-        0 0 60px #ffff4b,
-        0 0 70px #ffff4b,
-        0 0 80px #ffff4b;
-    color: #ffff4b;
+    text-shadow: 0 0 20px var(--color-listHover),
+        0 0 30px var(--color-listHover),
+        0 0 40px var(--color-listHover),
+        0 0 50px var(--color-listHover),
+        0 0 60px var(--color-listHover),
+        0 0 70px var(--color-listHover),
+        0 0 80px var(--color-listHover),
+        0 0 90px var(--color-listHover);
+    color: var(--color-listHover);
 }
 
 
@@ -619,7 +623,6 @@ nav li a:hover {
     }
 
     .Hobbies {
-        width: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
