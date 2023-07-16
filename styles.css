@@ -264,7 +264,7 @@ h3 {
 }
 .about-contents {
     width: 100%;
-    gap: 2rem;
+    gap: 1.3rem;
     font-size: 1.3rem;
     line-height: 2rem;
     display: flex;
@@ -292,7 +292,7 @@ h3 {
 
 .hobbies-content {
     width: 100%;
-    gap: 2rem;
+    gap: 1.3rem;
     font-size: 1.3rem;
     line-height: 2rem;
     display: flex;
@@ -330,7 +330,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3em;
+    gap: 1.3rem;
     /* color: #ff477e; */
     margin-left: auto;
     margin-right: auto;
@@ -388,6 +388,7 @@ h3 {
     margin-right: auto;
     padding-top: 5rem;
     padding-bottom: 6rem;
+    gap:1.3rem;
 }
 
 #Inputs,
@@ -589,11 +590,11 @@ nav li a:hover {
     }
 
     h2 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     #typewriter {
-        font-size: 1.6rem;   
+        font-size: 1.8rem;   
     }
 
     .About {
@@ -722,10 +723,6 @@ nav li a:hover {
         font-size: 3rem;
     }
 
-    .swiper{
-        object-fit: cover;
-        width: 100%;
-    }
 
     .Hobbies {
         display: flex;
@@ -769,5 +766,9 @@ nav li a:hover {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    #favorites-contents h3{
+        font-size: 3rem;
     }
 }
