@@ -586,7 +586,7 @@ nav li a:hover {
     }
 
     #Profile {
-        height: 18rem;
+        height: 20rem;
     }
 
     h2 {
@@ -692,6 +692,91 @@ nav li a:hover {
     }
 
 }
+
+@media (max-width: 930px) {
+
+    #Profile {
+        height: 28rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    #typewriter {
+        font-size: 2.8rem;   
+    }
+
+    .About {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper{
+    
+    }
+
+    .about-contents{
+        font-size: 1rem; ;
+    }
+
+    .about-Title{
+        font-size: 3rem;
+    }
+
+
+    .Hobbies {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .hobbies-content{
+        font-size: 1rem;
+    }
+
+    .hobbies-content h3{
+        font-size: 3rem;
+    }
+
+    #hobbies-Pics {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    #hobbies-Pics img {
+        height: 9rem;
+        width: 9rem;
+    }
+
+    #contactme-Contents h3{
+        font-size: 3rem;
+    }
+
+    #contactme-Contents {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    #favorite-Pics {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #favorites-contents h3{
+        font-size: 3rem;
+    }
+
+  }
 
 @media (max-width: 500px) {
     
