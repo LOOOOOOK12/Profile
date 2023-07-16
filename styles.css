@@ -696,15 +696,15 @@ nav li a:hover {
 @media (max-width: 930px) {
 
     #Profile {
-        height: 28rem;
+        height: 20rem;
     }
 
     h2 {
-        font-size: 4rem;
+        font-size: 2rem;
     }
 
     #typewriter {
-        font-size: 2.8rem;   
+        font-size: 2rem;   
     }
 
     .About {
